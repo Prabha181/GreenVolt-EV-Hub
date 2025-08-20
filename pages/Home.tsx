@@ -18,6 +18,9 @@ import {
 } from "lucide-react";
 import Layout from "@/components/Layout";
 
+import HeroImage from '../assets/electric-vehicle1.jpg';
+import PremiumElectricScooter
+ from '../assets/sustain-the-future.jpg';
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -117,7 +120,7 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute inset-0 bg-greenvolt-green/20 rounded-3xl blur-3xl"></div>
                 <img
-                    src="/electric-vehicle.jpg"   // ✅ works always
+                    src={HeroImage}   // ✅ works always
                     alt="Electric Vehicle"
                     className="relative rounded-3xl shadow-2xl w-full"
                   />
@@ -199,7 +202,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src="/sustain-the-future.jpg" 
+                src={PremiumElectricScooter} 
                 alt="Featured Electric Vehicle" 
                 className="rounded-3xl shadow-2xl w-full"
               />

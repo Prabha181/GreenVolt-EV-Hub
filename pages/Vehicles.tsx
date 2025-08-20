@@ -22,6 +22,10 @@ import {
 } from "lucide-react";
 import Layout from "@/components/Layout";
 
+import GreenVoltUrbanPro from '../assets/1.jpg';
+import GreenVoltEcoMax from '../assets/2.jpg';
+import GreenVoltCityRider from '../assets/3.jpg';
+
 export default function Vehicles() {
   const [selectedVehicle, setSelectedVehicle] = useState(0);
 
@@ -46,7 +50,7 @@ export default function Vehicles() {
       name: "GreenVolt Urban Pro",
       category: "Premium Scooter",
       price: "₹85,000",
-      image: "/1.jpg",
+      image: GreenVoltUrbanPro,
       highlights: ["6-8 Hour Charging", "170kg Capacity", "Digital Display", "Keyless Entry"],
       description: "Perfect for city commuting with premium features and elegant design."
     },
@@ -55,7 +59,7 @@ export default function Vehicles() {
       name: "GreenVolt Eco Max",
       category: "Efficient Scooter",
       price: "₹72,000",
-      image: "/2.jpg",
+      image: GreenVoltEcoMax,
       highlights: ["Long Range Battery", "Eco Mode", "LED Lighting", "Mobile Charging"],
       description: "Maximum efficiency and range for eco-conscious riders."
     },
@@ -64,7 +68,7 @@ export default function Vehicles() {
       name: "GreenVolt City Rider",
       category: "Standard Scooter",
       price: "₹65,000",
-      image: "/3.jpg",
+      image: GreenVoltCityRider,
       highlights: ["Quick Charging", "Compact Design", "Safety Features", "Affordable"],
       description: "Reliable and affordable option for everyday urban transportation."
     }
